@@ -1,0 +1,7 @@
+/*========================= mixin ====================*/
+@mixin transition($time) {
+    transition: all $time;
+}
+@mixin transform($value) {
+    transform: $value;
+}

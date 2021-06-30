@@ -1,0 +1,87 @@
+
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+// Font Family
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700;800&display=swap');
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a, button {
+    outline: none;
+    border: none;
+}
+a:focus,
+.button:focus {
+text-decoration: none;
+outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $playfair;
+    color: $black;
+    margin: 0;
+    font-style: normal;
+    text-transform: normal;
+}
+
+::selection {
+    background: $black;
+    color: $white;
+    text-shadow: none;
+}
+/*--
+    - Input Placeholder
+-----------------------------------------*/
+
+*::placeholder {
+    color: $black;
+    font-size: 14px;
+    opacity: 1;
+}
+
+
+/*--
+    - position Classes
+-----------------------------------------*/
+
+.posrelative {
+    position: relative;
+}
+.posabsolute {
+    position: absolute;
+}
+
+/*--
+    - Theme btm
+-----------------------------------------*/
