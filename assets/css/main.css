@@ -3,7 +3,8 @@
     Template Name: Boradin - Business & Corporate HTML5 Template 
     Author: Uxaction
     Version: 1.0
-
+    @Developed By: Md Tofajjal Hossen
+    
 -----------------------------------------------------------------------------------
 
 CSS INDEX
@@ -45,6 +46,14 @@ CSS INDEX
 html, body {
   height: 100%;
   width: 100%; }
+
+body {
+  font-family: "Assistant", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: #494d59; }
 
 ul {
   list-style: none;
@@ -121,5 +130,5 @@ h6 {
   position: absolute; }
 
 /*--
-    - Theme btm
+    - Theme btn
 -----------------------------------------*/
