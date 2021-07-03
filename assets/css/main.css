@@ -132,3 +132,25 @@ h6 {
 /*--
     - Theme btn
 -----------------------------------------*/
+.header .header_top_bar {
+  border-bottom: 1px solid #f1f1f0; }
+  .header .header_top_bar .headertop_info {
+    padding: 14px 0; }
+    .header .header_top_bar .headertop_info span {
+      font-size: 14px;
+      font-family: "Assistant", sans-serif;
+      font-weight: 600;
+      color: #494d59;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin-right: 60px; }
+      .header .header_top_bar .headertop_info span:last-child {
+        margin-right: 0; }
+      .header .header_top_bar .headertop_info span:hover {
+        color: #f89001; }
+    .header .header_top_bar .headertop_info b {
+      font-weight: 700;
+      color: #1b212f;
+      text-transform: capitalize; }
