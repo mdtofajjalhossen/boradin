@@ -93,3 +93,24 @@ h6 {
 /*--
     - Theme btn
 -----------------------------------------*/
+
+.primary_Btn{
+display: inline-block;
+color: $white;
+font-size: 14px;
+font-weight: $fw700;
+font-family: $playfair;
+box-shadow: none;
+border-radius: 50px;
+border: 1px solid $theme-color;
+text-transform: $textcapitazlie;
+padding: 13px 40px;
+@include transition(0.5s);
+outline: none;
+background: $theme-color;
+&:hover {
+    border-color: #d1cfce;
+    color: $black;
+    background: transparent;
+}
+}

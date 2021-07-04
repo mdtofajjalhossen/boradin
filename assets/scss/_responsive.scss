@@ -1,0 +1,36 @@
+@media(min-width:992px) {
+.main_menu{
+    .navbar{
+        .header_menu{
+            .dropdown{
+                .dropdown-menu.submenu {
+                    margin-top: 0;
+                    display: block;
+                    visibility: hidden;
+                    max-width: 200px;
+                    width: min-content;
+                    position: absolute;
+                    left: 0;
+                    transform-origin: 50% 0;
+                    transform: translateY(20%);
+                    top: 100%;
+                    @include transition(0.3s);
+                    opacity: 0;
+                }
+                &:hover {
+                    .dropdown-menu.submenu {
+                        opacity: 1;
+                        visibility: visible;
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+}

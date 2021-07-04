@@ -31,7 +31,7 @@
 
     <!-- Add your site or application content here -->
     <!-- preloader -->
-    <header class="header">
+    <header class="header fixed navbar_fixed">
         <div class="header_top_bar">
             <div class="container">
                 <div class="row">
@@ -51,54 +51,57 @@
                 <div class="row">
                     <div class="col-lg-12 col-xl-12 col-md-12 co-12">
                         <nav class="navbar navbar-expand-lg">
-                              <a class="navbar-brand logo" href="index.html">
-                                  <img src="assets/img/logo/Logo2x.png" alt="Logo">
-                                  <img src="assets/img/logo/Logo-white.png" alt="Logo">
-                              </a>
-                              <button class="navbar-toggler hamburger_Btn" type="button" data-bs-toggle="collapse" data-bs-target="#header_menu" aria-expanded="false">
-                                  <span class="bar_icon">
-                                      <span class="bar bar_1"></span>
-                                      <span class="bar bar_2"></span>
-                                      <span class="bar bar_3"></span>
-                                  </span>
-                              </button>
-                              <div class="collapse navbar-collapse header_menu" id="header_menu">
+                            <a class="navbar-brand logo" href="index.html">
+                                <img src="assets/img/logo/Logo2x.png" alt="Logo">
+                                <img src="assets/img/logo/Logo-white.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler hamburger_Btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#header_menu" aria-expanded="false">
+                                <span class="bar_icon">
+                                    <span class="bar bar_1"></span>
+                                    <span class="bar bar_2"></span>
+                                    <span class="bar bar_3"></span>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse header_menu" id="header_menu">
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item dropdown active">
                                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                          Home
+                                            Home
                                         </a>
                                         <ul class="dropdown-menu submenu">
-                                          <li class="menu-item active"><a class="" href="#">Home Style 1</a></li>
-                                          <li class="menu-item"><a class="" href="#">Home Style 2</a></li>
-                                          <li class="menu-item"><a class="" href="#">Home Style 3</a></li>
+                                            <li class="menu-item active"><a class="" href="#">Home Style 1</a></li>
+                                            <li class="menu-item"><a class="" href="#">Home Style 2</a></li>
+                                            <li class="menu-item"><a class="" href="#">Home Style 3</a></li>
                                         </ul>
-                                      </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">About Us</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">Rooms</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">Pages</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">Blogs</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                  </li>
-                                  <li class="nav-item"><a class="icon_profile nav-link" href="#"><i class=""></i></a></li>
-                                </ul>
-                                <div class="getBtn">
+                                    </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Book Now</a>
-                                      </li>
-    
+                                        <a class="nav-link" href="#">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Rooms</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Pages</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blogs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                                <div class="getBtn_icon">
+                                    <li class="nav-item">
+                                        <a class="icon_profile nav-link" href="#"><i class=""></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link primary_Btn" href="#">Book Now</a>
+                                    </li>
+
                                 </div>
-                              </div>
-                          </nav>
+                            </div>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -114,46 +117,140 @@
                 <div class="col-lg-12 col-xl-12 col-md-12 col-12">
                     <div class="slider_active">
                         <div class="slider_item">
-                            <h1 class="banner_header">Find Your Hotels & Many more, 
+                            <h1 class="banner_header"  data-animation="fadeInUp2" data-delay=".2s">Find Your Hotels & Many more,
                                 Touch The Dream !</h1>
-                            <p class="banner_pra">However venture pursuit he am mr cordial. Forming musical am hearing studied be luckily. 
+                            <p class="banner_pra"  data-animation="fadeInUp2" data-delay=".3s">However venture pursuit he tam mr cordial. Forming musical am hearing
+                                studied be luckily.
                                 Ourselves for determine attending how led gentleman sincerity.</p>
-                            <div class="from_selection">
+                            <div class="from_selection"  data-animation="fadeInUp2" data-delay=".4s">
                                 <div class="form-filter">
-                                   <select class="sel" name="area" id="area">
-                                    <option value="Location">Location</option>
-                                    <option value="Location">America</option>
-                                    <option value="Location">Austolia</option>
-                                    <option value="Location">Bangladesh</option>
-                                   </select> 
+                                    <select class="sel" name="area" id="area">
+                                        <option value="Location">Location</option>
+                                        <option value="Location">America</option>
+                                        <option value="Location">Austolia</option>
+                                        <option value="Location">Bangladesh</option>
+                                    </select>
                                 </div>
 
                                 <div class="form-filter">
-                                   <select class="sel" name="area" id="datecalendar">
-                                    <option value="Location">Check in</option>
-                                    <option value="Location">10/20/2021</option>
-                                    <option value="Location">10/20/2021</option>
-                                    <option value="Location">10/20/2021</option>
-                                   </select> 
+                                    <select class="sel" name="area" id="datecalendar">
+                                        <option value="Location">Check in</option>
+                                        <option value="Location">01/03/2021</option>
+                                        <option value="Location">02/05/2021</option>
+                                        <option value="Location">06/06/2021</option>
+                                    </select>
                                 </div>
 
                                 <div class="form-filter">
-                                   <select class="sel" name="area" id="dateout">
-                                    <option value="Location">Check Out</option>
-                                    <option value="Location">15/20/2021</option>
-                                    <option value="Location">30/05/2021</option>
-                                    <option value="Location">25/12/ 2021</option>
-                                   </select> 
+                                    <select class="sel" name="area" id="dateout">
+                                        <option value="Location">Check Out</option>
+                                        <option value="Location">15/04/2021</option>
+                                        <option value="Location">24/05/2021</option>
+                                        <option value="Location">04/06/2021</option>
+                                    </select>
                                 </div>
 
                                 <div class="form-filter">
-                                   <select class="sel" name="area" id="dateout">
-                                    <option value="Location">Guetsts</option>
-                                    <option value="Location">1 Person</option>
-                                    <option value="Location">4 Person</option>
-                                    <option value="Location">2 Person</option>
-                                    <option value="Location">6 Person</option>
-                                   </select> 
+                                    <select class="sel" name="area" id="dateout">
+                                        <option value="Location">Guetsts</option>
+                                        <option value="Location">1 Person</option>
+                                        <option value="Location">4 Person</option>
+                                        <option value="Location">7 Person</option>
+                                    </select>
+                                </div>
+                                <div class="serch_box">
+                                    <a href="#" class="">Search Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_item">
+                            <h1 class="banner_header"  data-animation="fadeInUp2" data-delay=".2s">Find Your Hotels & Many more,
+                                Touch The Dream !</h1>
+                            <p class="banner_pra"  data-animation="fadeInUp2" data-delay=".3s">However venture pursuit he tam mr cordial. Forming musical am hearing
+                                studied be luckily.
+                                Ourselves for determine attending how led gentleman sincerity.</p>
+                            <div class="from_selection"  data-animation="fadeInUp2" data-delay=".4s">
+                                <div class="form-filter">
+                                    <select class="sel" name="area" id="area">
+                                        <option value="Location">Location</option>
+                                        <option value="Location">America</option>
+                                        <option value="Location">Austolia</option>
+                                        <option value="Location">Bangladesh</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-filter">
+                                    <select class="sel" name="area" id="datecalendar">
+                                        <option value="Location">Check in</option>
+                                        <option value="Location">01/03/2021</option>
+                                        <option value="Location">02/05/2021</option>
+                                        <option value="Location">06/06/2021</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-filter">
+                                    <select class="sel" name="area" id="dateout">
+                                        <option value="Location">Check Out</option>
+                                        <option value="Location">15/04/2021</option>
+                                        <option value="Location">24/05/2021</option>
+                                        <option value="Location">04/06/2021</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-filter">
+                                    <select class="sel" name="area" id="dateout">
+                                        <option value="Location">Guetsts</option>
+                                        <option value="Location">1 Person</option>
+                                        <option value="Location">4 Person</option>
+                                        <option value="Location">7 Person</option>
+                                    </select>
+                                </div>
+                                <div class="serch_box">
+                                    <a href="#" class="">Search Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider_item">
+                            <h1 class="banner_header"  data-animation="fadeInUp2" data-delay=".2s">Find Your Hotels & Many more,
+                                Touch The Dream !</h1>
+                            <p class="banner_pra"  data-animation="fadeInUp2" data-delay=".3s">However venture pursuit he tam mr cordial. Forming musical am hearing
+                                studied be luckily.
+                                Ourselves for determine attending how led gentleman sincerity.</p>
+                            <div class="from_selection"  data-animation="fadeInUp2" data-delay=".4s">
+                                <div class="form-filter">
+                                    <select class="sel" name="area" id="area">
+                                        <option value="Location">Location</option>
+                                        <option value="Location">America</option>
+                                        <option value="Location">Austolia</option>
+                                        <option value="Location">Bangladesh</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-filter">
+                                    <select class="sel" name="area" id="datecalendar">
+                                        <option value="Location">Check in</option>
+                                        <option value="Location">01/03/2021</option>
+                                        <option value="Location">02/05/2021</option>
+                                        <option value="Location">06/06/2021</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-filter">
+                                    <select class="sel" name="area" id="dateout">
+                                        <option value="Location">Check Out</option>
+                                        <option value="Location">15/04/2021</option>
+                                        <option value="Location">24/05/2021</option>
+                                        <option value="Location">04/06/2021</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-filter">
+                                    <select class="sel" name="area" id="dateout">
+                                        <option value="Location">Guetsts</option>
+                                        <option value="Location">1 Person</option>
+                                        <option value="Location">4 Person</option>
+                                        <option value="Location">7 Person</option>
+                                    </select>
                                 </div>
                                 <div class="serch_box">
                                     <a href="#" class="">Search Now</a>
@@ -165,9 +262,6 @@
             </div>
         </div>
     </div>
-
-
-
 
     <!-- JS here -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
