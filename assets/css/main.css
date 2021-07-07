@@ -154,6 +154,27 @@ h6 {
     color: #1b212f;
     background: transparent; }
 
+.common_heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #1b212f;
+  font-family: "Playfair Display", sans-serif; }
+
+.common_headtwo {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 56px;
+  color: #1b212f;
+  font-family: "Playfair Display", sans-serif; }
+
+.common_headthree {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 56px;
+  color: #1b212f;
+  font-family: "Playfair Display", sans-serif; }
+
 .header .header_top_bar {
   border-bottom: 1px solid #f1f1f0; }
   .header .header_top_bar .headertop_info {

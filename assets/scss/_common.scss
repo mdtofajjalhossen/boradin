@@ -114,3 +114,26 @@ background: $theme-color;
     background: transparent;
 }
 }
+
+
+.common_heading {
+    font-size: 40px;
+    font-weight: $fw700;
+    line-height: 56px;
+    color: $black;
+    font-family: $playfair;
+}
+.common_headtwo {
+    font-size: 36px;
+    font-weight: $fw900;
+    line-height: 56px;
+    color: $black;
+    font-family: $playfair;
+}
+.common_headthree {
+    font-size: 30px;
+    font-weight: $fw900;
+    line-height: 56px;
+    color: $black;
+    font-family: $playfair;
+}
