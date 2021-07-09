@@ -1,0 +1,75 @@
+/*-------------------------------- about wrap css ----------------------------------*/
+.about_wrap {
+    background: #fff9f2;
+    padding: 100px 0 195px;
+    .about_left_img {
+        position: relative;
+        .about_mainImg {
+            position: relative;
+            left: -78px;
+            img {
+                border-radius: 5px;
+            }
+        }
+        .about_img_itemone {
+            position: absolute;
+            z-index: 2;
+            right: 0;
+            top: 150px;
+            img {
+                border: 20px solid #fff9f2;
+                border-radius: 5px;
+            }
+        }
+        .about_img_itemtwo {
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            top: 357px;
+            img {
+                border: 20px solid #fff9f2;
+                border-radius: 5px;
+            }
+        }
+    }
+    /*-------------------------------- about right css ----------------------------------*/
+    .about_right {
+        padding-top: 155px;
+        .common_heading {
+            display: inline-block;
+            margin-bottom: 40px;
+            background-image: -o-linear-gradient(left, currentColor 0%, currentColor 100%);
+            background-image: -webkit-gradient(linear, left top, right top, from(currentColor), to(currentColor));
+            background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+            background-position: 0 100%;
+            background-repeat: no-repeat;
+            background-size: 0 2px;
+            -webkit-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+            @include transition(0.5s);
+            &:hover {
+                color: $theme-color;
+                background-size: 100% 2px;
+            }
+        }
+        .about_min_head {
+            font-family: $playfair;
+            font-weight: $fw700;
+            font-size: 24px;
+            line-height: 38px;
+            color: $black;
+            margin-bottom: 30px;
+        }
+        .about_des {
+            font-family: $assistant;
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: $fw600;
+            color: $black2;
+            margin-bottom: 55px;
+        }
+        .primary_Btn {
+        }
+    }
+}

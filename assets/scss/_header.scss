@@ -1,3 +1,5 @@
+/*-------------------------------- header wrap css ----------------------------------*/
+
 .header {
     .header_top_bar {
         .headertop_info {
@@ -140,7 +142,9 @@
                             }
                         }
                         &.active {
+                            // background: red;
                             a {
+                                // color: red;
                                 &::before {
                                     width: 100%;
                                     opacity: 1;

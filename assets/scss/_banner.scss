@@ -1,9 +1,9 @@
-.banner_area{
-    background: url(../img/banner/banner-01.jpg) no-repeat center center /cover;
+.banner_area {
+    background: url(../img/banner/banner-01.jpg) no-repeat center center / cover;
     padding: 285px 0 40px;
-    .slider_active{
-        .slider_item{
-            .banner_header{
+    .slider_active {
+        .slider_item {
+            .banner_header {
                 font-size: 50px;
                 font-weight: $fw900;
                 line-height: 76px;
@@ -14,7 +14,7 @@
                 font-family: $playfair;
                 margin-bottom: 5px;
             }
-            .banner_pra{
+            .banner_pra {
                 font-size: 18px;
                 line-height: 28px;
                 font-weight: $fw600;
@@ -24,17 +24,18 @@
                 width: 100%;
                 margin-bottom: 30px;
             }
-            .from_selection{
+            .from_selection {
                 display: grid;
-                grid-template-columns: repeat(5,1fr);
+                grid-template-columns: repeat(5, 1fr);
                 margin-bottom: 190px;
                 border-radius: 5px;
-                background-color: rgba(255, 255, 255, 0.40);
+                background-color: rgba(255, 255, 255, 0.4);
                 top: 709px;
-                width: 1090px;
+                max-width: 1090px;
+                width: 100%;
                 height: 100px;
                 padding: 20px;
-                .form-filter{
+                .form-filter {
                     // display: inline-block;
                     // max-width: 19%;
                     // width: 100%;
@@ -48,7 +49,7 @@
                         width: 96%;
                         border-radius: 5px;
                         box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.08);
-                        .list{
+                        .list {
                             width: 100%;
                         }
                         &:focus {
@@ -57,7 +58,7 @@
                         }
                     }
                 }
-                .serch_box{
+                .serch_box {
                     width: 100%;
                     a {
                         font-family: $playfair;
