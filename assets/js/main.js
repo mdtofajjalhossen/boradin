@@ -240,4 +240,44 @@
 
 
 
+      function filTeTiSotOp() {
+        var $grid = $('.msnary-grid');
+        if( $grid.length ){
+            $grid.imagesLoaded( function() {
+                $grid.isotope({
+                    itemSelector: '.msnary-item',
+                    horizontalOrder: true,
+                    percentPosition: true,
+                    layoutMode: 'masonry',
+                    animationOptions :{
+                        duration:1000
+                    },
+                    stagger: 0,
+                    transitionDuration: '0.9s',
+                    masonry: {
+                        // use outer width of grid-sizer for columnWidth
+                        columnWidth: 1,
+                        columnWidth: '.grid-sizer',
+                        gutter: 30,
+                        // horizontalOrder: false
+                    }
+                });
+            });
+        }
+    }
+    filTeTiSotOp();
+
+
+    function custommagnificpopup(){
+        $('.image-link').magnificPopup({
+            type: 'image',
+            mainClass: 'mfp-with-zoom animated animate__fadeInDown',
+            gallery:{
+              enabled:true
+            }
+          });
+    }
+    custommagnificpopup();
+
+
 })(jQuery);
