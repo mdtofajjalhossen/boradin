@@ -87,8 +87,7 @@ h6 {
   font-family: "Playfair Display", sans-serif;
   color: #1b212f;
   margin: 0;
-  font-style: normal;
-  text-transform: normal; }
+  font-style: normal; }
 
 ::-moz-selection {
   background: #1b212f;
@@ -203,6 +202,7 @@ h6 {
     width: 300%;
     height: 300%; } }
 
+/*-------------------------------- preloader css ----------------------------------*/
 #preloader {
   position: fixed;
   top: 0;
@@ -274,6 +274,7 @@ h6 {
     -ms-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
+/*-------------------------------- headertop css ----------------------------------*/
 /*-------------------------------- header wrap css ----------------------------------*/
 .header .header_top_bar {
   border-bottom: 1px solid #f1f1f0; }
@@ -426,14 +427,14 @@ h6 {
             color: #f89001; }
             .header .main_menu .navbar .header_menu ul li .dropdown-menu .menu-item.active a::before {
               display: none; }
-  .header .main_menu .navbar .header_menu .getBtn_icon li {
+  .header .main_menu .navbar .header_menu .getBtn_icon .nav-item {
     display: inline-block;
     margin-right: 35px; }
-    .header .main_menu .navbar .header_menu .getBtn_icon li .icon_profile {
+    .header .main_menu .navbar .header_menu .getBtn_icon .nav-item .icon_profile {
       font-size: 20px;
       line-height: inherit;
       padding: 0; }
-    .header .main_menu .navbar .header_menu .getBtn_icon li:last-child {
+    .header .main_menu .navbar .header_menu .getBtn_icon .nav-item:last-child {
       margin-right: 0; }
 
 .header.navbar_fixed {
@@ -449,6 +450,7 @@ h6 {
   box-shadow: 0 2px 20px 0px rgba(0, 0, 0, 0.04);
   background: #fff; }
 
+/*-------------------------------- banner css ----------------------------------*/
 .banner_area {
   background: url(../img/banner/banner-01.jpg) no-repeat center center/cover;
   padding: 285px 0 40px; }
@@ -597,6 +599,7 @@ h6 {
       color: #494d59;
       margin-bottom: 55px; }
 
+/*-------------------------------- feature_wrap css ----------------------------------*/
 .feature_wrap {
   padding: 135px 0 125px;
   background: #fff; }
@@ -736,111 +739,122 @@ h6 {
       border-color: #f89001;
       color: #f89001; }
 
+/*-------------------------------- gallery css ----------------------------------*/
+/*-------------------------------- newsfeed css ----------------------------------*/
+/*-------------------------------- newsletter css ----------------------------------*/
+/*-------------------------------- rooms css ----------------------------------*/
 .rooms_wrap {
   padding: 40px 0 115px; }
   .rooms_wrap .service_head_wrap .common_heading {
     margin-bottom: 50px; }
-
-.msnary-item {
-  position: relative;
-  display: block;
-  line-height: 0; }
-
-.msnary-item a {
-  display: inline-block; }
-
-.msnary-item a img {
-  display: inline-block;
-  /* border-radius: 5px; */ }
-
-.msnary-item img {
-  max-width: 100%;
-  width: 100%;
-  /* object-fit: cover; */
-  /* background-size: cover; */ }
-
-.msnary-grid {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  width: auto; }
-
-.grid-sizer, .msnary-item {
-  overflow: hidden;
-  width: calc((100% - (3 - 1) * 30px) / 3);
-  margin-bottom: 30px; }
-
-.gutter-sizer {
-  width: 0px; }
-
-.msnary-item .image-link::before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background: #f89001;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  opacity: 0;
-  visibility: hidden; }
-
-.msnary-item .image-link:hover:before {
-  opacity: 1;
-  visibility: visible; }
-
-.masonry_text {
-  position: absolute;
-  top: 50%;
-  padding: 0 35px;
-  -webkit-transform: translateY(-50%) translate3d(0, 30px, 0px);
-  transform: translateY(-50%) translate3d(0, 30px, 0px);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  cursor: pointer; }
-
-.msnary-item:hover .masonry_text {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: translateY(-50%) translate3d(0, 0px, 0px);
-  transform: translateY(-50%) translate3d(0, 0px, 0px);
-  opacity: 1; }
-
-.masonry_text h3 {
-  font-size: 25px; }
-
-.masonry_text p {
-  font-size: 18px;
-  line-height: 26px;
-  color: #000; }
-
-.masonry_text a {
-  font-size: 16px;
-  padding: 12px 24px;
-  display: inline-block;
-  background: #fff; }
-
-.msnary-item a, .msnary-item a img {
-  z-index: 1000;
-  cursor: pointer; }
+  .rooms_wrap .msnary-grid {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    width: auto; }
+  .rooms_wrap .grid-sizer,
+  .rooms_wrap .msnary-item {
+    overflow: hidden;
+    width: calc((100% - (3 - 1) * 30px) / 3);
+    margin-bottom: 30px; }
+  .rooms_wrap .gutter-sizer {
+    width: 0px; }
+  .rooms_wrap .msnary-item {
+    position: relative;
+    display: block;
+    line-height: 0;
+    border-radius: 5px; }
+    .rooms_wrap .msnary-item .image-link {
+      display: inline-block;
+      max-width: 100%;
+      width: 100%; }
+      .rooms_wrap .msnary-item .image-link::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: #f89001;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        opacity: 0;
+        visibility: hidden; }
+      .rooms_wrap .msnary-item .image-link img {
+        display: inline-block;
+        max-width: 100%;
+        width: 100%; }
+    .rooms_wrap .msnary-item:hover .image-link::before {
+      opacity: 1;
+      visibility: visible; }
+    .rooms_wrap .msnary-item .masonry_text {
+      position: absolute;
+      top: 50%;
+      padding: 0 35px;
+      -webkit-transform: translateY(-50%) translate3d(0, 30px, 0px);
+      transform: translateY(-50%) translate3d(0, 30px, 0px);
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      cursor: pointer; }
+      .rooms_wrap .msnary-item .masonry_text .masonry_heading {
+        font-size: 30px;
+        line-height: 40px;
+        font-family: "Playfair Display", sans-serif;
+        font-weight: 900;
+        color: #fff;
+        text-transform: capitalize;
+        margin-bottom: 12px; }
+      .rooms_wrap .msnary-item .masonry_text .masonry_pra {
+        font-family: "Assistant", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+        margin-bottom: 30px; }
+      .rooms_wrap .msnary-item .masonry_text .masonry_text_btn {
+        font-family: "Playfair Display", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #f89001;
+        text-transform: capitalize;
+        padding: 12px 25px;
+        border-radius: 5px;
+        background-color: #fff;
+        -webkit-box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.1);
+        box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.1);
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+        .rooms_wrap .msnary-item .masonry_text .masonry_text_btn:hover {
+          background: #494d59;
+          color: #fff; }
+    .rooms_wrap .msnary-item:hover .masonry_text {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: translateY(-50%) translate3d(0, 0px, 0px);
+      transform: translateY(-50%) translate3d(0, 0px, 0px);
+      opacity: 1; }
 
 @media (max-width: 640px) {
-  .grid-sizer, .msnary-item {
+  .grid-sizer,
+  .msnary-item {
     overflow: hidden;
     width: calc((100% - (2 - 1) * 30px) / 2);
     margin-bottom: 30px; } }
 
+/*-------------------------------- service css ----------------------------------*/
 .service_wrap {
   padding: 140px 0 30px;
   background: #494d59; }
   .service_wrap .service_head_wrap .common_heading {
     margin-bottom: 55px; }
 
+/*-------------------------------- single service css ----------------------------------*/
 .single_service {
   padding: 30px;
   border-radius: 5px;
@@ -892,6 +906,8 @@ h6 {
     -webkit-box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.06);
     box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.06); }
 
+/*-------------------------------- slider css ----------------------------------*/
+/*-------------------------------- video css ----------------------------------*/
 .video_play_wrap {
   background: url(../img/video/video-03.jpg) no-repeat center center/cover;
   min-height: 700px;
@@ -941,6 +957,8 @@ h6 {
         box-shadow: 0px 1px 15px 1px #fff;
         z-index: -1; }
 
+/*-------------------------------- footer css ----------------------------------*/
+/*-------------------------------- responsive css ----------------------------------*/
 @media (min-width: 992px) {
   .main_menu .navbar .header_menu .dropdown .dropdown-menu.submenu {
     margin-top: 0;

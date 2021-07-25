@@ -1,117 +1,122 @@
+/*-------------------------------- rooms css ----------------------------------*/
 
 .rooms_wrap {
     padding: 40px 0 115px;
     .service_head_wrap {
-        .common_heading{
+        .common_heading {
             margin-bottom: 50px;
+        }
+    }
+    .msnary-grid {
+        display: -ms-flexbox;
+        display: flex;
+        width: auto;
+    }
+    .grid-sizer,
+    .msnary-item {
+        overflow: hidden;
+        width: calc((100% - (3 - 1) * 30px) / 3);
+        margin-bottom: 30px;
+    }
+    .gutter-sizer {
+        width: 0px;
+    }
+    .msnary-item {
+        position: relative;
+        display: block;
+        line-height: 0;
+        border-radius: 5px;
+        .image-link {
+            display: inline-block;
+            max-width: 100%;
+            width: 100%;
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                content: "";
+                background: $theme-color;
+                @include transition(0.5s);
+                opacity: 0;
+                visibility: hidden;
+            }
+            img {
+                display: inline-block;
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+        &:hover {
+            .image-link {
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        // masonry description css
+        .masonry_text {
+            position: absolute;
+            top: 50%;
+            padding: 0 35px;
+            transform: translateY(-50%) translate3d(0, 30px, 0px);
+            opacity: 0;
+            visibility: hidden;
+            @include transition(0.5s);
+            cursor: pointer;
+            .masonry_heading {
+                font-size: 30px;
+                line-height: 40px;
+                font-family: $playfair;
+                font-weight: $fw900;
+                color: $white;
+                text-transform: $textcapitazlie;
+                margin-bottom: 12px;
+            }
+            .masonry_pra {
+                font-family: $assistant;
+                font-weight: $fw600;
+                font-size: 16px;
+                line-height: 24px;
+                color: $white;
+                margin-bottom: 30px;
+            }
+            .masonry_text_btn {
+                font-family: $playfair;
+                font-weight: $fw700;
+                font-size: 16px;
+                line-height: 24px;
+                color: $theme-color;
+                text-transform: $textcapitazlie;
+                padding: 12px 25px;
+                border-radius: 5px;
+                background-color: $white;
+                box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.1);
+                @include transition(0.5s);
+                &:hover {
+                    background: $black2;
+                    color: $white;
+                }
+            }
+        }
+        &:hover {
+            .masonry_text {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(-50%) translate3d(0, 0px, 0px);
+                opacity: 1;
+            }
         }
     }
 }
 
-.msnary-item {
-    position: relative;
-    display: block;
-    line-height: 0;
-}
-.msnary-item a {
-    display: inline-block;
-}
-.msnary-item a img {
-    display: inline-block;
-    /* border-radius: 5px; */
-}
-.msnary-item img {
-    max-width: 100%;
-    width: 100%;
-    /* object-fit: cover; */
-    /* background-size: cover; */
-}
-
-
-.msnary-grid {
-    display: -ms-flexbox;
-    display: flex;
-    width: auto;
-}
-.grid-sizer, .msnary-item {
-    overflow: hidden;
-    // width: calc(100%/3);
-    width: calc((100% - (3 - 1) * 30px) / 3);
-    margin-bottom: 30px;
-}
-
-.gutter-sizer {
-    width: 0px;
-}
-
-
-.msnary-item .image-link::before{
-position: absolute;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-content: "";
-background: $theme-color;
-// background: $black;
-@include transition(0.5s);
-opacity: 0;
-visibility: hidden;
-
-}
-.msnary-item .image-link:hover:before {
-    opacity: 1;
-    visibility: visible;
-}
-
-.masonry_text {
-    position: absolute;
-    top: 50%;
-    padding: 0 35px;
-    // transform: translateY(-50%) translate3d(0, 50px, 0);
-    transform: translateY(-50%,) translate3d(0, 30px, 0px);
-    // opacity: 1;
-    opacity: 0;
-    visibility: hidden;
-    @include transition(0.5s);
-    cursor: pointer;
-}
-.msnary-item:hover .masonry_text {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(-50%,) translate3d(0, 0px, 0px);
-    opacity: 1;
-}
-.masonry_text h3 {
-    font-size: 25px;
-}
-
-.masonry_text p {
-    font-size: 18px;
-    line-height: 26px;
-    color: #000;
-}
-
-.masonry_text a {
-    font-size: 16px;
-    padding: 12px 24px;
-    display: inline-block;
-    background: $white;
-
-}
-
-.msnary-item a, .msnary-item a img {
-    z-index: 1000;
-    cursor: pointer;
-}
-
-
 @media (max-width: 640px) {
-    .grid-sizer, .msnary-item {
+    .grid-sizer,
+    .msnary-item {
         overflow: hidden;
         width: calc((100% - (2 - 1) * 30px) / 2);
         margin-bottom: 30px;
     }
-    
-
 }
