@@ -35,23 +35,9 @@
     /*-------------------------------- about right css ----------------------------------*/
     .about_right {
         padding-top: 155px;
-        .common_heading {
-            display: inline-block;
+        .common_heading.common_hover {
             margin-bottom: 40px;
-            background-image: -o-linear-gradient(left, currentColor 0%, currentColor 100%);
-            background-image: -webkit-gradient(linear, left top, right top, from(currentColor), to(currentColor));
-            background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
-            background-position: 0 100%;
-            background-repeat: no-repeat;
-            background-size: 0 2px;
-            -webkit-box-sizing: border-box;
-            -ms-box-sizing: border-box;
-            box-sizing: border-box;
-            @include transition(0.5s);
-            &:hover {
-                color: $theme-color;
-                background-size: 100% 2px;
-            }
+            display: inline-block;
         }
         .about_min_head {
             font-family: $playfair;

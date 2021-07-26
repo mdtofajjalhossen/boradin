@@ -159,7 +159,7 @@
     $('select').niceSelect();
 
 
-    $('.owl-carousel').owlCarousel({
+    $('.feature_wrap_slide').owlCarousel({
         loop:true,
         margin: 45,
         nav:true,
@@ -271,13 +271,42 @@
     function custommagnificpopup(){
         $('.image-link').magnificPopup({
             type: 'image',
-            mainClass: 'mfp-with-zoom animated animate__fadeInDown',
+            mainClass: 'mfp-with-zoom animated animate__fadeInDown custompop',
             gallery:{
               enabled:true
             }
           });
     }
     custommagnificpopup();
+
+
+    $('.newsfeed_slide_active').owlCarousel({
+        loop:false,
+        margin:30,
+        nav:true,
+        autoplay:false,
+        responsive:{
+            0:{
+                items:1,
+                margin: 0,
+            },
+            480:{
+                items:1,
+            },
+            767:{
+                items:2,
+                margin: 30,
+            },
+            992:{
+                items:3,
+            },
+            1366:{
+                items:3
+            }
+        }
+    })
+
+
 
 
 })(jQuery);

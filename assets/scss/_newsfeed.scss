@@ -1,1 +1,115 @@
 /*-------------------------------- newsfeed css ----------------------------------*/
+
+.newsfeed_wrap {
+    background: $white;
+    .container.custom_container {
+        max-width: 1260px;
+        width: 100%;
+        .newsfeed_slide_active.owl-carousel {
+            .item {
+                .newsfeed_single_slide {
+                    margin-bottom: 100px;
+                    .single_img {
+                        img {
+                            width: 95%;
+                            border-radius: 5px;
+                        }
+                    }
+                    .single_description {
+                        position: relative;
+                        left: 15px;
+                        padding-bottom: 30px;
+                        cursor: pointer;
+                        @include transition(0.5s);
+                        &::before {
+                            position: absolute;
+                            bottom: 0;
+                            width: 100%;
+                            height: 325px;
+                            content: "";
+                            background-color: #111;
+                            z-index: -1;
+                            border-radius: 5px;
+                            box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.04);
+                        }
+                        .dds{
+                            margin-bottom: 15px;
+                            .feat_min_head {
+                                margin-left: 20px;
+                                font-family: $assistant;
+                                font-size: 16px;
+                                font-weight: $fw600;
+                                line-height: 25px;
+                                color: $theme-color;
+                                display: inline-block;
+                                position: relative;
+                                cursor: pointer;
+                                @include transition(0.5s);
+                                &::before {
+                                    position: absolute;
+                                    right: -20px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    content: "";
+                                    background: $theme-color;
+                                    width: 1px;
+                                    height: 11px;
+                                }
+                                &:hover {
+                                    color: $black;
+                                }
+  
+                            }
+                            .feat_main_head{ 
+                                margin-left: 40px;
+                                font-family: $assistant;
+                                font-size: 16px;
+                                font-weight: $fw600;
+                                line-height: 25px;
+                                color: $theme-color;
+                                display: inline-block;
+                                position: relative;
+                                cursor: pointer;
+                                @include transition(0.5s);
+                                &:hover {
+                                    color: $black;
+                                }
+                            }
+                        }
+                        .room_des{
+                            .room_price{
+                                font-size: 18px;
+                                font-weight: $fw700;
+                                line-height: 25px;
+                                color: $black;
+                                font-family: $playfair;
+                                margin-left: 20px;
+                                margin-bottom: 12px;
+                            }
+                            .room_del{
+                                font-family: $assistant;
+                                font-size: 16px;
+                                font-weight: $fw600;
+                                line-height: 28px;
+                                color: $black2;
+                                display: inline-block;
+                                border-bottom: 1px solid #84868d;
+                                margin-left: 20px;
+                            }
+                        }
+                        &:hover {
+                            box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.1);
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// .owl-carousel .owl-item img {
+//     display: block;
+//     width: 95% !important;
+// }
+

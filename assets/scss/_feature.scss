@@ -8,23 +8,6 @@
         max-width: 355px;
         width: 100%;
         margin-bottom: 50px;
-        .common_heading {
-            display: inline;
-            background-image: -o-linear-gradient(left, currentColor 0%, currentColor 100%);
-            background-image: -webkit-gradient(linear, left top, right top, from(currentColor), to(currentColor));
-            background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
-            background-position: 0 100%;
-            background-repeat: no-repeat;
-            background-size: 0 2px;
-            -webkit-box-sizing: border-box;
-            -ms-box-sizing: border-box;
-            box-sizing: border-box;
-            @include transition(0.5s);
-            &:hover {
-                color: $theme-color;
-                background-size: 100% 2px;
-            }
-        }
     }
     .feature_wrap_slide {
         .featurewrap_single_slide {
@@ -149,3 +132,5 @@
         }
     }
 }
+
+
