@@ -1,1 +1,23 @@
 /*-------------------------------- newsletter css ----------------------------------*/
+.newsletter_wrap{
+    background-color: #fff9f2;
+    padding: 100px 0 70px;
+    .newsletter_main{
+        background: #f99b1b;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 60px;
+        border-radius: 5px;
+        box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(0, 0, 0, 0.1);
+        .newsletter_heading{
+
+        }
+        .subscribe_form{
+            position: relative;
+            max-width: 580px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}

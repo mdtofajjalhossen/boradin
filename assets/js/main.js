@@ -281,10 +281,14 @@
 
 
     $('.newsfeed_slide_active').owlCarousel({
-        loop:false,
-        margin:30,
+        loop:true,
+        margin: 45,
         nav:true,
-        autoplay:false,
+        items:3,
+        center:false,
+        autoplay: false,
+        autoplaySpeed: 2500,
+        navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
         responsive:{
             0:{
                 items:1,
