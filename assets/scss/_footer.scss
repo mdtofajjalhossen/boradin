@@ -1,1 +1,112 @@
 /*-------------------------------- footer css ----------------------------------*/
+
+.footer_wrap{
+    padding: 140px 0 60px;  
+    background: $white;
+    .footer_widget{
+        a {
+            img {
+                margin-bottom: 35px;
+            }
+        }
+        .footer_pra{
+            font-family: $assistant;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: $fw600;
+            color: #666666;
+            margin-bottom: 44px;
+            max-width: 320px;
+            width: 100%;
+        }
+        .footer_social{
+            ul {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                column-gap: 15px;
+                li {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $black;
+                        font-size: 16px;
+                        border-color: rgb(209, 207, 206);
+                        border-style: solid;
+                        border-width: 1px;
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50px;
+                        @include transition(0.5s);
+                        &:hover {
+                            background: $black;
+                            border-color: $black;
+                            color: $white;
+                        }
+
+                    }
+                }
+            }
+        }
+        // 
+        .footer_heading{
+            font-family: $playfair;
+            font-size: 22px;
+            font-weight: $fw700;
+            color: $black;
+            text-transform: $textcapitazlie;
+        }
+        .footer_menu{
+            ul {
+                li {
+                    margin-bottom: 20px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    a {
+                        font-family: $assistant;
+                        font-size: 16px;
+                        font-weight: $fw600;
+                        color: $black2;
+                        text-transform: $textcapitazlie;
+                        display: inline-block;
+                        position: relative;
+                        
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            right: 0;
+                            bottom: 0;
+                            width: 0;
+                            height: 1px;
+                            background: $theme-color;
+                            opacity: 0;
+                            visibility: hidden;
+                            @include transition(0.5s);
+                        }
+                        &:hover {
+                            color: $theme-color;
+                            &::before {
+                                opacity: 1;
+                                visibility: visible;
+                                right: auto;
+                                left: 0;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// copyright
+.copyright_wrap {
+    background: $black;
+    padding: 25px 0;
+}
