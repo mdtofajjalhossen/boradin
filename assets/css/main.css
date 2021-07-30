@@ -725,6 +725,66 @@ h6 {
       color: #f89001; }
 
 /*-------------------------------- gallery css ----------------------------------*/
+.Gallery_wrap {
+  overflow-x: hidden;
+  margin: 0 32px; }
+  .Gallery_wrap .gallery_wrap_item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px; }
+    .Gallery_wrap .gallery_wrap_item .gallery_single_item {
+      overflow: hidden;
+      position: relative; }
+      .Gallery_wrap .gallery_wrap_item .gallery_single_item .gallery_single {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden; }
+        .Gallery_wrap .gallery_wrap_item .gallery_single_item .gallery_single::before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#1b212f)) !important;
+          background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #1b212f 100%) !important;
+          background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #1b212f 100%) !important;
+          background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1b212f 100%) !important;
+          opacity: 0;
+          visibility: hidden;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+        .Gallery_wrap .gallery_wrap_item .gallery_single_item .gallery_single img {
+          width: 100%;
+          height: 100%; }
+        .Gallery_wrap .gallery_wrap_item .gallery_single_item .gallery_single:hover::before {
+          opacity: 1;
+          visibility: visible; }
+      .Gallery_wrap .gallery_wrap_item .gallery_single_item .gallery_social {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) translate3d(0, 30px, 0);
+        transform: translate(-50%, -50%) translate3d(0, 30px, 0);
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        opacity: 0;
+        visibility: hidden; }
+        .Gallery_wrap .gallery_wrap_item .gallery_single_item .gallery_social a {
+          font-size: 30px;
+          color: #fff; }
+      .Gallery_wrap .gallery_wrap_item .gallery_single_item:hover .gallery_social {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate(-50%, -50%) translate3d(0, 0px, 0);
+        transform: translate(-50%, -50%) translate3d(0, 0px, 0); }
+
 /*-------------------------------- newsfeed css ----------------------------------*/
 .newsfeed_wrap {
   background: #fff;
@@ -856,20 +916,92 @@ h6 {
 .newsletter_wrap {
   background-color: #fff9f2;
   padding: 100px 0 70px; }
-  .newsletter_wrap .newsletter_main {
+  .newsletter_wrap .container.custom_container {
     background: #f99b1b;
     max-width: 1000px;
     width: 100%;
-    margin: 0 auto;
-    padding: 60px;
+    padding: 50px 30px 60px;
     border-radius: 5px;
     -webkit-box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(0, 0, 0, 0.1);
     box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(0, 0, 0, 0.1); }
-    .newsletter_wrap .newsletter_main .subscribe_form {
+    .newsletter_wrap .container.custom_container .newsletter_main .newsletter_heading {
+      font-family: "Playfair Display", sans-serif;
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: capitalize;
+      margin-bottom: 40px; }
+    .newsletter_wrap .container.custom_container .newsletter_main .subscribe_form {
       position: relative;
       max-width: 580px;
       width: 100%;
       margin: 0 auto; }
+      .newsletter_wrap .container.custom_container .newsletter_main .subscribe_form .input-group {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+        .newsletter_wrap .container.custom_container .newsletter_main .subscribe_form .input-group input {
+          font-family: "Assistant", sans-serif;
+          font-size: 16px;
+          line-height: 28px;
+          font-weight: 400;
+          border-radius: 5px;
+          background: #fff;
+          padding: 5px 15px 0 30px;
+          height: 50px;
+          line-height: 50px;
+          border-color: transparent;
+          border-width: 0;
+          text-transform: capitalize;
+          margin-right: 20px;
+          -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+          -ms-flex-preferred-size: 69%;
+          flex-basis: 69%; }
+          .newsletter_wrap .container.custom_container .newsletter_main .subscribe_form .input-group input::-webkit-input-placeholder {
+            color: #494d59; }
+          .newsletter_wrap .container.custom_container .newsletter_main .subscribe_form .input-group input:-ms-input-placeholder {
+            color: #494d59; }
+          .newsletter_wrap .container.custom_container .newsletter_main .subscribe_form .input-group input::-ms-input-placeholder {
+            color: #494d59; }
+          .newsletter_wrap .container.custom_container .newsletter_main .subscribe_form .input-group input::placeholder {
+            color: #494d59; }
+          .newsletter_wrap .container.custom_container .newsletter_main .subscribe_form .input-group input:focus {
+            border-color: transparent;
+            -webkit-box-shadow: none;
+            box-shadow: none; }
+        .newsletter_wrap .container.custom_container .newsletter_main .subscribe_form .input-group .Subscribe_btn {
+          font-family: "Playfair Display", sans-serif;
+          font-size: 16px;
+          line-height: 28px;
+          font-weight: 400;
+          border-radius: 5px !important;
+          background: #1b212f;
+          color: #fff;
+          padding: 5px 25px;
+          text-transform: capitalize;
+          letter-spacing: 0.40px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -ms-flex-preferred-size: 31%;
+          flex-basis: 31%;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          .newsletter_wrap .container.custom_container .newsletter_main .subscribe_form .input-group .Subscribe_btn:hover {
+            background: #fff;
+            color: #1b212f; }
 
 /*-------------------------------- rooms css ----------------------------------*/
 .rooms_wrap {
