@@ -59,3 +59,22 @@
         }
     }
 }
+  /*-------------------------------- about home page two css ----------------------------------*/
+.about_img_itemtwo {
+    display: flex;
+    .about_headingclass {
+        flex-grow: 1;
+    }
+     i{
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+     }
+}
+.about_img_itemthree {
+    display: flex;
+    flex-wrap: wrap;
+    .about_headingclass {
+        flex-grow: 1;
+    }
+}
