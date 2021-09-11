@@ -604,7 +604,10 @@ h6 {
 
 /*-------------------------------- about home page two css ----------------------------------*/
 .about_wrap_hometwo {
-  /*-------------- about home two right side css ----------*/ }
+  padding: 130px 0 230px;
+  background: #fff;
+  /*-------------- about home two right side css ----------*/
+  /*-------------- about home two row two ----------*/ }
   .about_wrap_hometwo .about_left_img {
     position: relative; }
     .about_wrap_hometwo .about_left_img .about_mainImg {
@@ -683,21 +686,21 @@ h6 {
       font-weight: 700;
       text-transform: capitalize;
       margin-bottom: 12px; }
-      .about_wrap_hometwo .about_img_itemthree .about_headingclass i {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        color: #0584d8; }
-      .about_wrap_hometwo .about_img_itemthree .about_headingclass p {
-        font-family: "Assistant", sans-serif;
-        font-size: 16px;
-        line-height: 24px;
-        color: #494d59;
-        font-weight: 400;
-        margin: 0; }
+    .about_wrap_hometwo .about_img_itemthree i {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: #0584d8; }
+    .about_wrap_hometwo .about_img_itemthree p {
+      font-family: "Assistant", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: #494d59;
+      font-weight: 400;
+      margin: 0; }
   .about_wrap_hometwo .about_img_itemfour {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -736,6 +739,32 @@ h6 {
       -ms-flex-align: center;
       align-items: center;
       color: #fff; }
+  .about_wrap_hometwo .about_right .common_heading {
+    font-size: 36px;
+    font-weight: 900;
+    font-family: "Playfair Display", sans-serif;
+    line-height: 56px;
+    color: #1b212f;
+    display: inline-block;
+    margin-bottom: 40px; }
+  .about_wrap_hometwo .about_right .about_min_head {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 700;
+    font-family: "Playfair Display", sans-serif;
+    color: #1b212f;
+    max-width: 505px;
+    width: 100%;
+    margin-bottom: 20px; }
+  .about_wrap_hometwo .about_right .about_des {
+    font-family: "Assistant", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #494d59;
+    margin-bottom: 10px;
+    max-width: 500px;
+    width: 100%; }
   .about_wrap_hometwo .about_right .about_sign {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -747,7 +776,8 @@ h6 {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    position: relative; }
+    position: relative;
+    margin-bottom: 52px; }
     .about_wrap_hometwo .about_right .about_sign::before {
       position: absolute;
       right: 38%;
@@ -756,6 +786,177 @@ h6 {
       width: 70px;
       height: 1px;
       background: #d1cfce; }
+    .about_wrap_hometwo .about_right .about_sign .sign_name {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 700;
+      font-family: "Playfair Display", sans-serif;
+      color: #1b212f;
+      text-transform: capitalize; }
+    .about_wrap_hometwo .about_right .about_sign .sing_post {
+      font-family: "Assistant", sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #1b212f;
+      margin-bottom: 0; }
+  .about_wrap_hometwo .about_right .primary_Btn {
+    position: relative;
+    background-color: #cce6f7;
+    color: #0082d7;
+    border-color: #cce6f7;
+    overflow: hidden;
+    z-index: 2; }
+    .about_wrap_hometwo .about_right .primary_Btn::before {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      height: 100%;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s;
+      background: #ff6b4f;
+      opacity: 0;
+      visibility: hidden;
+      border-radius: 50px;
+      z-index: -1; }
+    .about_wrap_hometwo .about_right .primary_Btn:hover {
+      color: #fff; }
+      .about_wrap_hometwo .about_right .primary_Btn:hover::before {
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+        right: auto; }
+  .about_wrap_hometwo .leftsideritem2 .headingclass {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 30px;
+    line-height: 46px;
+    color: #1b212f;
+    font-weight: 700;
+    margin-bottom: 40px; }
+  .about_wrap_hometwo .leftsideritem2 .about_pra {
+    font-family: "Assistant", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    color: #494d59;
+    font-weight: 600;
+    max-width: 510px;
+    width: 100%;
+    margin-bottom: 55px; }
+  .about_wrap_hometwo .leftsideritem2 .primary_Btn {
+    color: #0082d7;
+    background: #cce6f7;
+    border-color: transparent; }
+  .about_wrap_hometwo .about_rightImg {
+    position: relative;
+    left: 70px; }
+    .about_wrap_hometwo .about_rightImg .about_mainimg {
+      position: relative; }
+      .about_wrap_hometwo .about_rightImg .about_mainimg img {
+        border-radius: 5px; }
+    .about_wrap_hometwo .about_rightImg .about_item_one {
+      position: absolute;
+      right: 50px;
+      bottom: -80px;
+      border-radius: 5px;
+      -webkit-box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.1);
+      box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.1);
+      z-index: 1; }
+    .about_wrap_hometwo .about_rightImg .about_item_two {
+      position: absolute;
+      left: -60px;
+      top: -60px;
+      -webkit-box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(255, 107, 79, 0.1);
+      box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(255, 107, 79, 0.1); }
+    .about_wrap_hometwo .about_rightImg .about_item_three {
+      position: absolute;
+      left: -30px;
+      bottom: -30px;
+      -webkit-box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(255, 107, 79, 0.1);
+      box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(255, 107, 79, 0.1);
+      border-radius: 5px; }
+    .about_wrap_hometwo .about_rightImg .about_item_four {
+      position: absolute;
+      right: 0;
+      bottom: 86px;
+      border-radius: 5px;
+      -webkit-box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(247, 189, 1, 0.1);
+      box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(247, 189, 1, 0.1);
+      z-index: 2; }
+    .about_wrap_hometwo .about_rightImg .single_description {
+      padding: 20px 30px;
+      background: #fff;
+      border-radius: 5px;
+      position: absolute;
+      top: 115px;
+      right: -45px;
+      z-index: 3; }
+      .about_wrap_hometwo .about_rightImg .single_description .feat_min_head {
+        font-family: "Assistant", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 25px;
+        color: #0082d7;
+        text-transform: capitalize;
+        margin-bottom: 8px; }
+      .about_wrap_hometwo .about_rightImg .single_description .feat_main_head {
+        font-family: "Playfair Display", sans-serif;
+        font-size: 22px;
+        color: #1b212f;
+        line-height: 30px;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin-bottom: 12px; }
+      .about_wrap_hometwo .about_rightImg .single_description .room_des .room_price {
+        font-size: 16px;
+        line-height: 25px;
+        font-family: "Assistant", sans-serif;
+        font-weight: 600;
+        color: #494d59;
+        text-transform: capitalize;
+        position: relative; }
+        .about_wrap_hometwo .about_rightImg .single_description .room_des .room_price::before {
+          position: absolute;
+          content: "";
+          right: -20px;
+          width: 1px;
+          height: 14px;
+          background: #d1cfce;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+      .about_wrap_hometwo .about_rightImg .single_description .room_des .room_del {
+        font-size: 16px;
+        line-height: 25px;
+        font-family: "Assistant", sans-serif;
+        font-weight: 600;
+        color: #1b212f;
+        text-transform: capitalize;
+        margin-left: 40px;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+        .about_wrap_hometwo .about_rightImg .single_description .room_des .room_del i {
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+        .about_wrap_hometwo .about_rightImg .single_description .room_des .room_del:hover {
+          color: #f89001; }
+          .about_wrap_hometwo .about_rightImg .single_description .room_des .room_del:hover i {
+            -webkit-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+            transform: translateX(10px); }
 
 /*-------------------------------- feature_wrap css ----------------------------------*/
 .feature_wrap {

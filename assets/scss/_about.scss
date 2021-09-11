@@ -61,6 +61,8 @@
 }
 /*-------------------------------- about home page two css ----------------------------------*/
 .about_wrap_hometwo {
+    padding: 130px 0 230px;
+    background: $white;
     .about_left_img {
         position: relative;
         .about_mainImg {
@@ -128,19 +130,19 @@
             font-weight: $fw700;
             text-transform: $textcapitazlie;
             margin-bottom: 12px;
-            i {
-                display: flex;
-                align-items: center;
-                color: #0584d8;
-            }
-            p {
-                font-family: $assistant;
-                font-size: 16px;
-                line-height: 24px;
-                color: $black2;
-                font-weight: $fw400;
-                margin: 0;
-            }
+        }
+        i {
+            display: flex;
+            align-items: center;
+            color: #0584d8;
+        }
+        p {
+            font-family: $assistant;
+            font-size: 16px;
+            line-height: 24px;
+            color: $black2;
+            font-weight: $fw400;
+            margin: 0;
         }
     }
     .about_img_itemfour {
@@ -175,17 +177,40 @@
     /*-------------- about home two right side css ----------*/
     .about_right {
         .common_heading {
+            font-size: 36px;
+            font-weight: $fw900;
+            font-family: $playfair;
+            line-height: 56px;
+            color: $black;
+            display: inline-block;
+            margin-bottom: 40px;
         }
         .about_min_head {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: $fw700;
+            font-family: $playfair;
+            color: $black;
+            max-width: 505px;
+            width: 100%;
+            margin-bottom: 20px;
         }
-        .about_des{
-
+        .about_des {
+            font-family: $assistant;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: $fw400;
+            color: $black2;
+            margin-bottom: 10px;
+            max-width: 500px;
+            width: 100%;
         }
-        .about_sign{
+        .about_sign {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             position: relative;
+            margin-bottom: 52px;
             &::before {
                 position: absolute;
                 right: 38%;
@@ -193,7 +218,191 @@
                 content: "";
                 width: 70px;
                 height: 1px;
-                background:#d1cfce;
+                background: #d1cfce;
+            }
+            .sign_name {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: $fw700;
+                font-family: $playfair;
+                color: $black;
+                text-transform: $textcapitazlie;
+            }
+            .sing_post {
+                font-family: $assistant;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: $fw400;
+                color: $black;
+                margin-bottom: 0;
+            }
+        }
+        .primary_Btn {
+            position: relative;
+            background-color: #cce6f7;
+            color: #0082d7;
+            border-color: #cce6f7;
+            overflow: hidden;
+            z-index: 2;
+            &::before {
+                position: absolute;
+                content: "";
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 0;
+                height: 100%;
+                @include transition(0.4s);
+                background: #ff6b4f;
+                opacity: 0;
+                visibility: hidden;
+                border-radius: 50px;
+                z-index: -1;
+            }
+            &:hover {
+                color: $white;
+                &::before {
+                    width: 100%;
+                    opacity: 1;
+                    visibility: visible;
+                    left: 0;
+                    right: auto;
+                }
+            }
+        }
+    }
+    /*-------------- about home two row two ----------*/
+    .leftsideritem2 {
+        .headingclass {
+            font-family: $playfair;
+            font-size: 30px;
+            line-height: 46px;
+            color: $black;
+            font-weight: $fw700;
+            margin-bottom: 40px;
+        }
+        .about_pra {
+            font-family: $assistant;
+            font-size: 18px;
+            line-height: 26px;
+            color: $black2;
+            font-weight: $fw600;
+            max-width: 510px;
+            width: 100%;
+            margin-bottom: 55px;
+        }
+        .primary_Btn {
+            color: $theme-color2;
+            background: #cce6f7;
+            border-color: transparent;
+        }
+    }
+
+    .about_rightImg {
+        position: relative;
+        left: 70px;
+        .about_mainimg {
+            position: relative;
+            img {
+                border-radius: 5px;
+            }
+        }
+        .about_item_one {
+            position: absolute;
+            right: 50px;
+            bottom: -80px;
+            border-radius: 5px;
+            box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.1);
+            z-index: 1;
+        }
+        .about_item_two {
+            position: absolute;
+            left: -60px;
+            top: -60px;
+            box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(255, 107, 79, 0.1);
+        }
+        .about_item_three {
+            position: absolute;
+            left: -30px;
+            bottom: -30px;
+            box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(255, 107, 79, 0.1);
+            border-radius: 5px;
+        }
+        .about_item_four {
+            position: absolute;
+            right: 0;
+            bottom: 86px;
+            border-radius: 5px;
+            box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(247, 189, 1, 0.1);
+            z-index: 2;
+        }
+        .single_description {
+            padding: 20px 30px;
+            background: #fff;
+            border-radius: 5px;
+            position: absolute;
+            top: 115px;
+            right: -45px;
+            z-index: 3;
+            .feat_min_head {
+                font-family: $assistant;
+                font-weight: $fw600;
+                font-size: 16px;
+                line-height: 25px;
+                color: $theme-color2;
+                text-transform: $textcapitazlie;
+                margin-bottom: 8px;
+            }
+            .feat_main_head {
+                font-family: $playfair;
+                font-size: 22px;
+                color: $black;
+                line-height: 30px;
+                font-weight: $fw700;
+                text-transform: $textcapitazlie;
+                margin-bottom: 12px;
+            }
+            .room_des {
+                .room_price {
+                    font-size: 16px;
+                    line-height: 25px;
+                    font-family: $assistant;
+                    font-weight: $fw600;
+                    color: $black2;
+                    text-transform: $textcapitazlie;
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        right: -20px;
+                        width: 1px;
+                        height: 14px;
+                        background: #d1cfce;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+                .room_del {
+                    font-size: 16px;
+                    line-height: 25px;
+                    font-family: $assistant;
+                    font-weight: $fw600;
+                    color: $black;
+                    text-transform: $textcapitazlie;
+                    margin-left: 40px;
+                    display: inline-flex;
+                    align-items: center;
+                    @include transition(0.5s);
+                    i {
+                        @include transition(0.5s);
+                    }
+                    &:hover {
+                        color: $theme-color;
+                        i {
+                            transform: translateX(10px);
+                        }
+                    }
+                }
             }
         }
     }
