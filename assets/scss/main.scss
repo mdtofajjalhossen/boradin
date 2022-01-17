@@ -31,22 +31,22 @@ CSS INDEX
 
 -----------------------------------------------------------------------------------*/
 
-@import 'variable';
-@import 'mixins';
-@import 'common';
-@import 'keyframes';
-@import 'preloader';
-@import 'headertop';
-@import 'header';
-@import 'banner';
-@import 'about';
-@import 'feature';
-@import 'gallery';
-@import 'newsfeed';
-@import 'newsletter';
-@import 'rooms';
-@import 'service';
-@import 'slider';
-@import 'video';
-@import 'footer';
-@import 'responsive';
+@import "./variable";
+@import './mixins';
+@import './common';
+@import './keyframes';
+@import './preloader';
+@import './headertop';
+@import './header';
+@import './banner';
+@import './about';
+@import './feature';
+@import './gallery';
+@import './newsfeed';
+@import './newsletter';
+@import './rooms';
+@import './service';
+@import './slider';
+@import './video';
+@import './footer';
+@import './responsive';

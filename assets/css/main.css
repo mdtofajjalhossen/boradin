@@ -1157,13 +1157,13 @@ h6 {
         border-radius: 5px; }
       .newsfeed_wrap .container.custom_container .newsfeed_slide_active.owl-carousel .item .newsfeed_single_slide .single_description {
         position: relative;
-        left: 15px;
+        left: 20px;
         padding-bottom: 30px;
         cursor: pointer;
         -webkit-transition: all 0.5s;
         -o-transition: all 0.5s;
         transition: all 0.5s;
-        max-width: 95%; }
+        max-width: 92%; }
         .newsfeed_wrap .container.custom_container .newsfeed_slide_active.owl-carousel .item .newsfeed_single_slide .single_description::before {
           position: absolute;
           bottom: 0;
@@ -1176,6 +1176,7 @@ h6 {
           -webkit-box-shadow: -4.77px 24.541px 57.4px 4.6px rgba(27, 33, 47, 0.04);
           box-shadow: -4.77px 24.541px 57.4px 4.6px rgba(27, 33, 47, 0.04); }
         .newsfeed_wrap .container.custom_container .newsfeed_slide_active.owl-carousel .item .newsfeed_single_slide .single_description .dds {
+          margin-top: 25px;
           margin-bottom: 15px; }
           .newsfeed_wrap .container.custom_container .newsfeed_slide_active.owl-carousel .item .newsfeed_single_slide .single_description .dds .feat_min_head {
             margin-left: 20px;
@@ -1219,7 +1220,7 @@ h6 {
             .newsfeed_wrap .container.custom_container .newsfeed_slide_active.owl-carousel .item .newsfeed_single_slide .single_description .dds .feat_main_head:hover {
               color: #1b212f; }
         .newsfeed_wrap .container.custom_container .newsfeed_slide_active.owl-carousel .item .newsfeed_single_slide .single_description .room_des .room_price {
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 700;
           line-height: 25px;
           color: #1b212f;
@@ -1236,8 +1237,8 @@ h6 {
           border-bottom: 1px solid #84868d;
           margin-left: 20px; }
         .newsfeed_wrap .container.custom_container .newsfeed_slide_active.owl-carousel .item .newsfeed_single_slide .single_description:hover {
-          -webkit-box-shadow: -2.77px 14.541px 57.4px 3.6px rgba(27, 33, 47, 0.1);
-          box-shadow: -2.77px 14.541px 57.4px 3.6px rgba(27, 33, 47, 0.1); }
+          -webkit-box-shadow: 6px 20px 45px 3.6px rgba(27, 33, 47, 0.1);
+          box-shadow: 6px 20px 45px 3.6px rgba(27, 33, 47, 0.1); }
     .newsfeed_wrap .container.custom_container .newsfeed_slide_active.owl-carousel .owl-nav {
       display: -webkit-box;
       display: -ms-flexbox;

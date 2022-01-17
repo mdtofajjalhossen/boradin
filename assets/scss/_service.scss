@@ -2,7 +2,8 @@
 
 .service_wrap {
     padding: 140px 0 30px;
-    background: $black2;
+    padding: 300px;
+    // background-color: $black2;
     .service_head_wrap {
         .common_heading {
             margin-bottom: 55px;
@@ -10,49 +11,50 @@
     }
 }
 /*-------------------------------- single service css ----------------------------------*/
-.single_service {
-    padding: 30px;
-    border-radius: 5px;
-    @include  transition(0.5s);
-    margin-bottom: 30px;
-    .service_icon {
-        border-radius: 5px;
-        background: #fee9cc;
-        width: 80px;
-        height: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-bottom: 24px;
-        img {
+// .single_service {
+//     padding: 30px;
+//     border-radius: 5px;
+//     @include transition(0.5s);
+//     margin-bottom: 30px;
+//     .service_icon {
+//         border-radius: 5px;
+//         // background: #fee9cc;
+        
+//         width: 80px;
+//         height: 80px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         flex-direction: column;
+//         margin-bottom: 24px;
+//         img {
 
-        }
-    }
-    .service_title{
-       font-family: $playfair;
-       font-weight: $fw700;
-       font-size: 26px; 
-       line-height: 30px;
-       color: $black;  
-       text-transform: $textcapitazlie;  
-       margin-bottom: 20px;
-    }
-    .service_pra{
-        font-family: $assistant;
-        font-weight: $fw600;
-        font-size: 18px;
-        line-height: 28px;
-        color: $black2;
-        margin-bottom: 0;
-    }
-    &:hover {
-        cursor: pointer;
-        background-color: rgb(255, 255, 255);
-        box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.06);
-    }
-    &.single_active {
-        background-color: rgb(255, 255, 255);
-        box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.06);
-    }
-}
+//         }
+//     }
+//     .service_title{
+//        font-family: $playfair;
+//        font-weight: $fw700;
+//        font-size: 26px; 
+//        line-height: 30px;
+//        color: $black;  
+//        text-transform: $textcapitazlie;  
+//        margin-bottom: 20px;
+//     }
+//     .service_pra{
+//         font-family: $assistant;
+//         font-weight: $fw600;
+//         font-size: 18px;
+//         line-height: 28px;
+//         color: $black2;
+//         margin-bottom: 0;
+//     }
+//     &:hover {
+//         cursor: pointer;
+//         background-color: rgb(255, 255, 255);
+//         box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.06);
+//     }
+//     &.single_active {
+//         background-color: rgb(255, 255, 255);
+//         box-shadow: -4.77px 24.541px 87.4px 7.6px rgba(27, 33, 47, 0.06);
+//     }
+// }
