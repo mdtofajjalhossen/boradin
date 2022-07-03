@@ -1080,6 +1080,141 @@ h6 {
       border-color: #f89001;
       color: #f89001; }
 
+/*-------------------------------- feature_wrap css ----------------------------------*/
+.feature_wrap_Home_two {
+  padding: 135px 0 125px;
+  overflow-x: hidden;
+  background: #fff; }
+  .feature_wrap_Home_two .feature_head_wrap {
+    max-width: 355px;
+    width: 100%;
+    margin-bottom: 50px; }
+  .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide {
+    position: relative; }
+    .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide .single_img img {
+      border-radius: 5px; }
+    .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide .single_description {
+      padding: 20px 30px;
+      background: #fff;
+      border-radius: 5px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 20px;
+      margin: 0 20px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide .single_description .feat_min_head {
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 5px;
+        font-family: "Assistant", sans-serif;
+        font-weight: 600;
+        color: #f89001;
+        text-transform: capitalize; }
+      .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide .single_description .feat_main_head {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 8px;
+        font-family: "Playfair Display", sans-serif;
+        font-weight: 700;
+        color: #1b212f;
+        text-transform: capitalize; }
+      .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide .single_description .room_des .room_price {
+        font-size: 16px;
+        line-height: 25px;
+        font-family: "Assistant", sans-serif;
+        font-weight: 600;
+        color: #1b212f;
+        text-transform: capitalize;
+        position: relative; }
+        .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide .single_description .room_des .room_price::before {
+          position: absolute;
+          content: "";
+          right: -20px;
+          width: 1px;
+          height: 14px;
+          background: #d1cfce;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+      .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide .single_description .room_des .room_del {
+        font-size: 16px;
+        line-height: 25px;
+        font-family: "Assistant", sans-serif;
+        font-weight: 600;
+        color: #1b212f;
+        text-transform: capitalize;
+        margin-left: 40px;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+        .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide .single_description .room_des .room_del i {
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+        .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide .single_description .room_des .room_del:hover {
+          color: #f89001; }
+          .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide .single_description .room_des .room_del:hover i {
+            -webkit-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+            transform: translateX(10px); }
+      .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide .single_description:hover {
+        color: #fff;
+        background: #0082d7; }
+      .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide .single_description:hover .feat_min_head, .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide .single_description:hover .feat_main_head, .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide .single_description:hover .room_price, .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide .single_description:hover .room_del {
+        color: #fff; }
+    .feature_wrap_Home_two .feature_wrap_slide_active .featurewrap_single_slide.last-child {
+      margin-right: 0; }
+  .feature_wrap_Home_two .feature_wrap_slide_active .owl-nav .owl-prev,
+  .feature_wrap_Home_two .feature_wrap_slide_active .owl-nav .owl-next {
+    background: #fff;
+    border: 1px solid #d1cfce;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 1;
+    -webkit-filter: drop-shadow(0px 20px 30px rgba(216, 192, 218, 0.33));
+    filter: drop-shadow(0px 20px 30px rgba(216, 192, 218, 0.33));
+    position: absolute;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+  .feature_wrap_Home_two .feature_wrap_slide_active .owl-nav .owl-prev {
+    left: auto;
+    right: 23%;
+    top: -74px;
+    -webkit-transform: translateY(-50%) translateX(-75px);
+    -ms-transform: translateY(-50%) translateX(-75px);
+    transform: translateY(-50%) translateX(-75px); }
+    .feature_wrap_Home_two .feature_wrap_slide_active .owl-nav .owl-prev:hover {
+      border-color: #f89001;
+      color: #f89001; }
+  .feature_wrap_Home_two .feature_wrap_slide_active .owl-nav .owl-next {
+    left: auto;
+    right: 23%;
+    top: -74px;
+    -webkit-transform: translateY(-50%) translateX(0);
+    -ms-transform: translateY(-50%) translateX(0);
+    transform: translateY(-50%) translateX(0); }
+    .feature_wrap_Home_two .feature_wrap_slide_active .owl-nav .owl-next:hover {
+      border-color: #f89001;
+      color: #f89001; }
+
+@media (min-width: 1200px) {
+  .feature_wrap_slide_active.owl-carousel {
+    width: calc(((100vw - 1180px)/2) + 1180px - 8px); } }
+
 /*-------------------------------- gallery css ----------------------------------*/
 .Gallery_wrap {
   overflow-x: hidden;
@@ -1503,7 +1638,6 @@ h6 {
   margin-bottom: 30px; }
   .single_service .service_icon {
     border-radius: 5px;
-    background: #fee9cc;
     width: 80px;
     height: 80px;
     display: -webkit-box;

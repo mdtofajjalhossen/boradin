@@ -163,7 +163,7 @@
         loop:true,
         margin: 45,
         nav:true,
-        items:3,
+        items:4,
         center:false,
         autoplay: true,
         autoplaySpeed: 2500,
@@ -184,12 +184,45 @@
                 items:3,
             },
             1366:{
-                items:3
+                items:3.8
             }
         }
     })
     
+ /*-------------------------------------
+    home two feature slider
+    -------------------------------------*/
 
+    $('.feature_wrap_slide_active').owlCarousel({
+        loop:true,
+        margin: 45,
+        nav:true,
+        items:4,
+        center:false,
+        autoplay: false,
+        autoplaySpeed: 2500,
+        navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
+        responsive:{
+            0:{
+                items:1,
+                margin: 0,
+            },
+            480:{
+                items:1,
+            },
+            767:{
+                items:2,
+                margin: 30,
+            },
+            992:{
+                items:3,
+            },
+            1366:{
+                items:3.8
+            }
+        }
+    })
+    
  /*-------------------------------------
     TweenMax Mouse Effect
     -------------------------------------*/
@@ -280,36 +313,58 @@
     custommagnificpopup();
 
 
-    $('.newsfeed_slide_active').owlCarousel({
+    // $('.newsfeed_slide_active').owlCarousel({
+    //     loop:true,
+    //     margin: 0,
+    //     nav:true,
+    //     items:5,
+    //     center:false,
+    //     autoplay: false,
+    //     autoplaySpeed: 2500,
+    //     navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
+    //     responsive:{
+    //         0:{
+    //             items:1,
+    //             margin: 0,
+    //         },
+    //         480:{
+    //             items:1,
+    //         },
+    //         767:{
+    //             items:2,
+    //             margin: 30,
+    //         },
+    //         992:{
+    //             items:3,
+    //         },
+    //         1366:{
+    //             items:3.5
+    //         }
+    //     }
+    // })
+
+    // Home two script
+    
+    $('select').niceSelect();
+
+
+    $('.ssssssssss').owlCarousel({
         loop:true,
-        margin: 45,
+        margin:0,
         nav:true,
-        items:3,
-        center:false,
-        autoplay: false,
-        autoplaySpeed: 2500,
-        navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
+        tems:5,
         responsive:{
             0:{
-                items:1,
-                margin: 0,
+                items:1
             },
-            480:{
-                items:1,
+            600:{
+                items:5
             },
-            767:{
-                items:2,
-                margin: 30,
-            },
-            992:{
-                items:3,
-            },
-            1366:{
-                items:3
+            1000:{
+                items:5
             }
         }
     })
-
 
 
 
